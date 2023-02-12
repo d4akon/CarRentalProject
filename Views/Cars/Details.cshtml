@@ -3,13 +3,8 @@
 @{
     ViewData["Title"] = "Details";
 }
-
-<h1>Details</h1>
-
 <div>
-    <h4>Car</h4>
-    <hr />
-    <dl class="row">
+    <dl class="col text-center">
         <dt class = "col-sm-2">
             @Html.DisplayNameFor(model => model.Type)
         </dt>
@@ -38,8 +33,4 @@
             <img src="@Model.ImageUrl" style="width:500px;height:350px"/>
         </dd>
     </dl>
-</div>
-<div>
-    <a asp-action="Edit" asp-route-id="@Model?.Id">Edit</a> |
-    <a asp-action="Index">Back to List</a>
 </div>
