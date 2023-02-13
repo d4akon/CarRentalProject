@@ -15,9 +15,12 @@ namespace CarRentalProject.Models
         public DateTime DateOfReturn { get; set; }
         public int? RentalTime => (DateOfReturn - DateOfRental).Days;
         public ReservationStatus Status { get; set; }
-
-        //public Customer Customer { get; set; }
-        //public Employee Employee { get; set; }
+        
+        //public int CustomerId { get; set; }
+        //public virtual Customer Customer { get; set; }
+        //public int EmployeeId { get; set; }
+        //public virtual Employee Employee { get; set; }
+        public int CarId { get; set; }
         public Car Car { get; set; }        
     }
 
